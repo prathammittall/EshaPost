@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Post</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="instagram-post">
+        <div class="post-header">
+            <img src="esha_profile.jpg" alt="esha_profile" class="profile-img">
+            <div class="user-info">
+                <div class="username">Esha</div>
+                <div class="location">Ambala,Haryana</div>
+            </div>
+            <div class="more-options">
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+        </div>
+
+        <div class="post-image" id="postImage">
+            <img src="image.png" alt="Post image" class="post-img">
+            <div class="double-tap-overlay" id="doubleTapOverlay">
+                <i class="fas fa-heart double-tap-heart"></i>
+            </div>
+        </div>
+
+        <div class="post-actions">
+            <div class="action-buttons">
+                <button class="action-btn" id="likeBtn">
+                    <i class="far fa-heart"></i>
+                </button>
+                <button class="action-btn" id="commentBtn">
+                    <i class="far fa-comment"></i>
+                </button>
+                <button class="action-btn" id="shareBtn">
+                    <i class="far fa-paper-plane"></i>
+                </button>
+                <button class="action-btn save-btn" id="saveBtn">
+                    <i class="far fa-bookmark"></i>
+                </button>
+            </div>
+
+            <div class="likes-count" id="likesCount">1,234 likes</div>
+
+            <div class="caption">
+                <span class="username">Dhruv</span>
+                <span class="caption-text">Pagal Aurat Spotted</span>
+            </div>
+
+            <div class="comments-section" id="commentsSection">
+                <div class="comment">
+                    <span class="username">Yo</span>
+                    <span class="comment-text">This is absolutely stunning! 😍</span>
+                </div>
+                <div class="comment">
+                    <span class="username">Me</span>
+                    <span class="comment-text">Where was this taken?</span>
+                </div>
+            </div>
+
+            <div class="timestamp">2 HOURS AGO</div>
+        </div>
+
+        <div class="add-comment">
+            <input type="text" class="comment-input" id="commentInput" placeholder="Add a comment...">
+            <button class="post-comment-btn" id="postCommentBtn">Post</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
